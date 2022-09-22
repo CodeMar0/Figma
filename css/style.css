@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Frank+Ruhl+Libre:wght@700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 62.5rem;
+    margin: auto;
+    background-color: #E5E5E5;
+}
+
+/* #region ------- Repeted ------- */
+.grid-6-col {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.8125rem;
+    margin: 0;
+    line-height: 100%;
+    font-weight: 900;
+}
+h3 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+button {
+    border-radius: 6.25rem;
+    border-style: none;
+    box-shadow: 0px .125rem rgba(0, 0, 0, 0.1);
+    font-family: 'Fira Sans', serif;
+    font-size: .625rem;
+    font-weight: 700;
+    line-height: .75rem;
+    width: 8.1875rem;
+    height: 2.4375rem;
+    background-color: #fff;
+}
+.box-empty {
+    height: 21.25rem;
+    background-color: #777574;
+    grid-column: span 6;
+}
+/* #endregion */
+
+/* #region ------- Home Header ------- */
+section.header article.left {
+    grid-column: 1/4;
+    background-color: #C7DDEA;
+    background-image: url('../img/family.png');
+    background-size: 18.75rem;
+    background-repeat: no-repeat;
+    background-position: bottom right 1rem;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section.header article.left article.top {
+    width: 19.625rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+section.header article.left article.top p {
+    width: 16.5625rem;
+}
+section.header article.left article.top p span {
+    font-weight: 700;
+}
+
+section.header article.left article.bottom {
+    margin: 0 auto;
+    width: 19.625rem;
+    position: relative;
+    bottom: 6.5rem;
+}
+section.header article.left p {
+    font-family: 'Fira Sans', serif;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    font-weight: 500;
+}
+section.header article.left p span {
+    color: #fff;
+}
+section.header article.left article.bottom button {
+    border-radius: 6.25rem;
+    border-style: none;
+    box-shadow: 0rem .125rem rgba(0, 0, 0, 0.1);
+    font-family: 'Fira Sans', serif;
+    font-size: .625rem;
+    font-weight: 700;
+    width: 8.1875rem;
+    height: 2.4375rem;
+}
+section.header article.right {
+    grid-column: 4/7;
+}
+section.header article.two {
+    grid-column: 4/7;
+    height: 50%;
+    background-color: #F17949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+section.header article.two p, section article.three p {
+    font-family: 'Fira Sans', serif;
+    font-size: .6875rem;
+    line-height: .825rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+section.header article.two h2, section article.three h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2rem;
+    line-height: 2.5819rem;
+    font-weight: 900;
+    margin: 0;
+    color: #fff;
+}
+section.header article.three {
+    grid-column: 4/7;
+    height: 50%;
+
+    background-color: #FFB939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+/* #endregion */
+
+/* #region ------- Home Nav ------- */
+nav {
+    grid-column: 2/6;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Fira Sans', serif;
+    font-size: .75rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .4);
+}
+nav ul li a:hover {
+    color: rgba(0, 0, 0, 1);
+}
+/* #endregion */
+
+/* #region ------- Home Offer ------- */
+section.offer {
+    background-color: #A9A19E;
+    height: 38.25rem;
+    justify-items: end;
+}
+section.offer article.top {
+    grid-column: 1/7;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+section.offer article.top article.left {
+    margin-top: 6.5rem;
+    width: 38%;
+}
+section.offer article.top article.right {
+    align-self: center;
+    margin-top: 6.5rem;
+}
+section.offer article.top h1 {
+    color: #fff;
+}
+section.offer article.top button {
+    margin-top: 4rem;
+}
+section.offer article.top p {
+    width: 17.5rem;
+    font-family: 'Fira Sans', serif;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+section.offer article.cards {
+    grid-column: 1/7;
+    display: flex;
+    gap: 2rem;
+    margin: 7rem auto auto auto;
+    text-align: center;
+}
+section.offer article.cards article.card-1, section.offer article.cards article.card-2, section.offer article.cards article.card-3 {
+    height: 19.25rem;
+    width: 16rem;
+    background-color: #fff;
+    box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.1);
+    border-radius: .3125rem;
+}
+section.offer article.cards article.card-1 p, section.offer article.cards article.card-2 p, section.offer article.cards article.card-3 p {
+    font-family: 'Fira Sans', serif;
+    font-weight: 700;
+    font-size: .6875rem;
+    line-height: 1.125rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+section.offer article.cards article.card-1, section.offer article.cards article.card-2, section.offer article.cards article.card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+section.offer article.cards article.card-1 h3, section.offer article.cards article.card-1 p, section.offer article.cards article.card-2 h3, section.offer article.cards article.card-2 p, section.offer article.cards article.card-3 h3, article.cards article.card-3 p {
+    width: 85%;
+    bottom: 2rem;
+    position: relative;
+}
+section.offer article.cards article.card-1 article.bg, section.offer article.cards article.card-2 article.bg, section.offer article.cards article.card-3 article.bg {
+    height: 50%;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    background-position: 50% .5rem;
+    border-radius: .25rem;
+    bottom: 2rem;
+    position: relative;
+}
+section.offer article.cards article.card-1 article.bg {
+    background-image: url('../img/child.png');
+    background-color: #C7DDEA;
+}
+section.offer article.cards article.card-2 article.bg {
+    background-image: url('../img/adult.png');
+    background-color: #FAB131;
+    background-position: 50% 1rem;
+}
+section.offer article.cards article.card-3 article.bg {
+    background-image: url('../img/old.png');
+    background-color: #F17949;
+    background-size: 8rem;
+    background-position: 50% 2rem;
+}
+/* #endregion */
+
+/* #region ------- Home About ------- */
+section.about {
+    grid-column: 1/7;
+    height: 42.5rem;
+    background-color: #FAB131;
+}
+section.about article.box {
+    grid-column: 2/6;
+    text-align: center;
+    /* width: 27.625rem; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 4.5rem;
+}
+section.about article.box h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2.8125rem;
+    line-height: 2.8125rem;
+    color: #fff;
+}
+section.about article.box p {
+    font-family: 'Fira Sans', serif;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: rgba(0, 0, 0, 0.6);
+    width: 27.625rem;
+    font-size: .875rem;
+    align-self: center;
+}
+section.about article.box > p:first-of-type {
+    margin-top: 2.5rem;
+}
+/* #endregion */
+
+/* #region ------- Home How ------- */
+section.how {
+    grid-column: 1/7;
+    height: 42.5rem;
+    background-color: #fff;
+}
+section.how article {
+    grid-column: span 2;
+}
+section.how article.box-1 {
+    background-color: #C7DDEA;
+    display: flex;
+    flex-direction: column;
+}
+section.how article.box-2, section.how article.box-3, section.how article.box-4, section.how article.box-5, section.how article.box-6 {
+    display: flex;
+}
+section.how article.box-2 h2, section.how article.box-3 h2, section.how article.box-4 h2, section.how article.box-5 h2, section.how article.box-6 h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 900;
+    font-size: 2.1875rem;
+    line-height: 2.1875rem;
+    color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    left: 2rem;
+}
+section.how article.box-2 p, section.how article.box-3 p, section.how article.box-4 p, section.how article.box-5 p, section.how article.box-6 p {
+    font-family: 'Fira Sans', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 16.0625rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+section.how article.box-2 p {
+    width: 14.5rem;
+    margin: 0 auto 0 .8125rem;
+}
+section.how article.box-3 p {
+    width: 8rem;
+    margin: 0 auto 0 4rem;
+}
+section.how article.box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.how article.box-3 {
+ background-color: #EBEBEB;
+}
+section.how article.box-5 {
+    background-color: #F17949;
+}
+/* #endregion */
+
+/* #region ------- Home/Contact Footer ------- */
+footer {
+    grid-column: 1/7;
+}
+footer article.scroll-up {
+    height: 4.25rem;
+    background-color: #A9A19E;
+    grid-column: span 6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer article.scroll-up a {
+    margin: 0;
+    font-family: 'Fira Sans', serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* #endregion */
+
+/* #region ------- Contact Header ------- */
+section.contact-header {
+    grid-column: 1/7;
+    height: 340px;
+    background-color: #C7DDEA;
+}
+section.contact-header h1 {
+    grid-column: 3/5;
+    align-self: center;
+    position: relative;
+    top: 1rem;
+}
+section.contact-header img {
+    grid-column: 5/7;
+    align-self: self-end;
+    position: relative;
+    left: 3rem;
+}
+/* #endregion */
+
+/* #region ------- Contact Nav ------- */
+section.contact-nav {
+    background-color: #fff;
+}
+/* #endregion */
+
+/* #region ------- Contact Form ------- */
+section.contact-form {
+    background: #A9A19E;
+    height: 34rem;
+}
+section.contact-form article.left {
+    width: 100%;
+    display: flex;
+    grid-column: 1/4;
+    justify-content: center;
+}
+section.contact-form article.left h1 {
+    width: 19.625rem;
+    color: #fff;
+    margin-top: 7rem;
+}
+section.contact-form article.right {
+    grid-column: 4/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20.875rem;
+    margin-top: 2rem;
+}
+section.contact-form article.right p {
+    font-family: 'Fira Sans', serif;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: .875rem;
+    color: rgba(255, 255, 255, 0.7);;
+    margin-bottom: .5rem;
+}
+section.contact-form article.right input {
+    width: 20.875rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: .125rem;
+    background-color: #FEFEFE;
+    border-style: hidden;
+}
+section.contact-form article.right textarea {
+    width: 20.875rem;
+    height: 10.375rem;
+    padding: 1rem;
+    font-family: 'Fira Sans', serif;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: .875rem;
+    resize: none;
+    border-radius: .125rem;
+    background-color: #FEFEFE;
+    border-style: hidden;
+}
+section.contact-form article.right button {
+    align-self: flex-end;
+    margin-top: 2rem;
+}
+/* #endregion */
+
+/* #region ------- Contact Map ------- */
+section.contact-map {
+    background-image: url('../img/map-contact.png');
+    background-size: cover;
+    height: 25.4375rem;
+}
+section.contact-map article.left{
+    width: 31.25rem;
+    display: flex;
+    justify-content: center;
+}
+section.contact-map article.left article.box {
+    background-color: #FAB131;
+    color: #fff;
+    height: 12.875rem;
+    width: 20.188rem;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-top: 3rem;
+}
+section.contact-map article.left p { 
+    font-family: 'Fira Sans', serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+section.contact-map article.right img {
+    left: -2.1875rem;
+    top: 9.9063rem;
+    position: relative;
+}
+/* #endregion */
